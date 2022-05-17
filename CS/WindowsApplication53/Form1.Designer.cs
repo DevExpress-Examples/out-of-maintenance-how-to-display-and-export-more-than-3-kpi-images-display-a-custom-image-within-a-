@@ -29,23 +29,43 @@ namespace WindowsApplication53
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding4 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.dataSet1 = new System.Data.DataSet();
             this.dataTable1 = new System.Data.DataTable();
             this.dataColumn1 = new System.Data.DataColumn();
             this.dataColumn2 = new System.Data.DataColumn();
             this.dataColumn3 = new System.Data.DataColumn();
-            this.fieldName = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldDate = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldValue = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldName1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldDate2 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldValue1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.repositoryItemCustomButtonEdit1 = new WindowsApplication53.RepositoryItemCustomButtonEdit();
             this.fieldValue2 = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldDate1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldDate = new DevExpress.XtraPivotGrid.PivotGridField();
             this.repositoryItemImageComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox();
             this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.repositoryItemCustomButtonEdit2 = new WindowsApplication53.RepositoryItemCustomButtonEdit();
@@ -69,13 +89,14 @@ namespace WindowsApplication53
             this.pivotGridControl1.DataSource = this.dataSet1;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldName,
-            this.fieldDate,
-            this.fieldValue,
+            this.fieldName1,
+            this.fieldDate2,
+            this.fieldValue1,
             this.fieldValue2,
-            this.fieldDate1});
+            this.fieldDate});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemImageComboBox2,
             this.repositoryItemCustomButtonEdit1,
@@ -115,44 +136,45 @@ namespace WindowsApplication53
             this.dataColumn3.ColumnName = "Value";
             this.dataColumn3.DataType = typeof(int);
             // 
-            // fieldName
+            // fieldName1
             // 
-            this.fieldName.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldName.AreaIndex = 0;
-            this.fieldName.FieldName = "Name";
-            this.fieldName.Name = "fieldName";
-            this.fieldName.RowValueLineCount = 3;
+            this.fieldName1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldName1.AreaIndex = 0;
+            dataSourceColumnBinding1.ColumnName = "Name";
+            this.fieldName1.DataBinding = dataSourceColumnBinding1;
+            this.fieldName1.Name = "fieldName1";
+            this.fieldName1.RowValueLineCount = 3;
             // 
-            // fieldDate
+            // fieldDate2
             // 
-            this.fieldDate.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldDate.AreaIndex = 0;
-            this.fieldDate.Caption = "Year";
-            this.fieldDate.FieldName = "Date";
-            this.fieldDate.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
-            this.fieldDate.Name = "fieldDate";
-            this.fieldDate.UnboundFieldName = "fieldDate";
+            this.fieldDate2.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldDate2.AreaIndex = 0;
+            this.fieldDate2.Caption = "Year";
+            dataSourceColumnBinding2.ColumnName = "Date";
+            dataSourceColumnBinding2.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear;
+            this.fieldDate2.DataBinding = dataSourceColumnBinding2;
+            this.fieldDate2.Name = "fieldDate2";
             // 
-            // fieldValue
+            // fieldValue1
             // 
-            this.fieldValue.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldValue.AreaIndex = 0;
-            this.fieldValue.Caption = "Image+Text";
-            this.fieldValue.CellFormat.FormatString = "C2";
-            this.fieldValue.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.fieldValue.FieldEdit = this.repositoryItemCustomButtonEdit1;
-            this.fieldValue.FieldName = "Value";
-            this.fieldValue.Name = "fieldValue";
-            this.fieldValue.Options.AllowEdit = false;
-            this.fieldValue.Options.ShowButtonMode = DevExpress.XtraPivotGrid.PivotShowButtonModeEnum.ShowAlways;
-            this.fieldValue.SummaryType = DevExpress.Data.PivotGrid.PivotSummaryType.Max;
+            this.fieldValue1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldValue1.AreaIndex = 0;
+            this.fieldValue1.Caption = "Image+Text";
+            this.fieldValue1.CellFormat.FormatString = "C2";
+            this.fieldValue1.CellFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            dataSourceColumnBinding3.ColumnName = "Value";
+            this.fieldValue1.DataBinding = dataSourceColumnBinding3;
+            this.fieldValue1.FieldEdit = this.repositoryItemCustomButtonEdit1;
+            this.fieldValue1.Name = "fieldValue1";
+            this.fieldValue1.Options.AllowEdit = false;
+            this.fieldValue1.Options.ShowButtonMode = DevExpress.XtraPivotGrid.PivotShowButtonModeEnum.ShowAlways;
             // 
             // repositoryItemCustomButtonEdit1
             // 
             this.repositoryItemCustomButtonEdit1.AutoHeight = false;
             this.repositoryItemCustomButtonEdit1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.repositoryItemCustomButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemCustomButtonEdit1.DisplayFormat.FormatString = "C2";
             this.repositoryItemCustomButtonEdit1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.repositoryItemCustomButtonEdit1.Name = "repositoryItemCustomButtonEdit1";
@@ -162,15 +184,15 @@ namespace WindowsApplication53
             this.fieldValue2.AreaIndex = 0;
             this.fieldValue2.Name = "fieldValue2";
             // 
-            // fieldDate1
+            // fieldDate
             // 
-            this.fieldDate1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldDate1.AreaIndex = 1;
-            this.fieldDate1.Caption = "Date";
-            this.fieldDate1.FieldName = "Date";
-            this.fieldDate1.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.Date;
-            this.fieldDate1.Name = "fieldDate1";
-            this.fieldDate1.UnboundFieldName = "fieldDate1";
+            this.fieldDate.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldDate.AreaIndex = 1;
+            this.fieldDate.Caption = "Date";
+            dataSourceColumnBinding4.ColumnName = "Date";
+            dataSourceColumnBinding4.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.Date;
+            this.fieldDate.DataBinding = dataSourceColumnBinding4;
+            this.fieldDate.Name = "fieldDate";
             // 
             // repositoryItemImageComboBox2
             // 
@@ -195,7 +217,7 @@ namespace WindowsApplication53
             this.repositoryItemCustomButtonEdit2.AutoHeight = false;
             this.repositoryItemCustomButtonEdit2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.repositoryItemCustomButtonEdit2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemCustomButtonEdit2.Name = "repositoryItemCustomButtonEdit2";
             // 
             // repositoryItemCustomButtonEdit3
@@ -203,7 +225,7 @@ namespace WindowsApplication53
             this.repositoryItemCustomButtonEdit3.AutoHeight = false;
             this.repositoryItemCustomButtonEdit3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.repositoryItemCustomButtonEdit3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemCustomButtonEdit3.Name = "repositoryItemCustomButtonEdit3";
             // 
             // repositoryItemCustomButtonEdit4
@@ -211,7 +233,7 @@ namespace WindowsApplication53
             this.repositoryItemCustomButtonEdit4.AutoHeight = false;
             this.repositoryItemCustomButtonEdit4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.repositoryItemCustomButtonEdit4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, true, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.repositoryItemCustomButtonEdit4.Name = "repositoryItemCustomButtonEdit4";
             // 
             // Form1
@@ -244,11 +266,11 @@ namespace WindowsApplication53
         private System.Data.DataColumn dataColumn1;
         private System.Data.DataColumn dataColumn2;
         private System.Data.DataColumn dataColumn3;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldName;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldDate;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldValue;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldName1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldDate2;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldValue1;
         private DevExpress.XtraPivotGrid.PivotGridField fieldValue2;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldDate1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldDate;
         private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox repositoryItemImageComboBox2;
         private DevExpress.Utils.ImageCollection imageCollection1;
         private RepositoryItemCustomButtonEdit repositoryItemCustomButtonEdit1;
