@@ -37,8 +37,8 @@ Namespace WindowsApplication53
         Public Overrides Function GetBrick(ByVal info As PrintCellHelperInfo) As VisualBrick
             Dim baseBrick As TextBrick = TryCast(MyBase.GetBrick(info), TextBrick)
             If baseBrick Is Nothing Then Return MyBase.GetBrick(info)
-            Dim panelBrick As PanelBrick = info.PS.CreateBrick("PanelBrick")
-            Dim imageBrick As ImageBrick = info.PS.CreateBrick("ImageBrick")
+            Dim panelBrick As PanelBrick = TryCast(info.PS.CreateBrick("PanelBrick"), PanelBrick)
+            Dim imageBrick As ImageBrick = TryCast(info.PS.CreateBrick("ImageBrick"), ImageBrick)
             panelBrick.Bricks.Add(baseBrick)
             panelBrick.Bricks.Add(imageBrick)
             imageBrick.Padding = New PaddingInfo(2, 2, 5, 5)
