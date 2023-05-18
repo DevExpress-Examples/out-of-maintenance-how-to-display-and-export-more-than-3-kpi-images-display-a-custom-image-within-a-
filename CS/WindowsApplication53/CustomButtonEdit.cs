@@ -31,12 +31,12 @@ namespace WindowsApplication53
               typeof(ButtonEditViewInfo), new ButtonEditPainter(), true));
         }
         //Return custom brick to print image within the cells
-        public override DevExpress.XtraPrinting.IVisualBrick GetBrick(PrintCellHelperInfo info)
+        public override VisualBrick GetBrick(PrintCellHelperInfo info)
         {
             TextBrick baseBrick = base.GetBrick(info) as TextBrick;
             if (baseBrick == null) return base.GetBrick(info);
-            IPanelBrick panelBrick = info.PS.CreatePanelBrick();
-            IImageBrick imageBrick = info.PS.CreateImageBrick();
+            PanelBrick panelBrick = info.PS.CreateBrick("PanelBrick") as PanelBrick;
+            ImageBrick imageBrick = info.PS.CreateBrick("ImageBrick") as ImageBrick;
             panelBrick.Bricks.Add(baseBrick);
             panelBrick.Bricks.Add(imageBrick);
             imageBrick.Padding = new PaddingInfo(2, 2, 5, 5);                        

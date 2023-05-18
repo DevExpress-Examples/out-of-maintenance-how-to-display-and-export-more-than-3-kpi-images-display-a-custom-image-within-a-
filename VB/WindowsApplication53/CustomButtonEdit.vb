@@ -34,11 +34,11 @@ Namespace WindowsApplication53
         End Sub
 
         'Return custom brick to print image within the cells
-        Public Overrides Function GetBrick(ByVal info As PrintCellHelperInfo) As IVisualBrick
+        Public Overrides Function GetBrick(ByVal info As PrintCellHelperInfo) As VisualBrick
             Dim baseBrick As TextBrick = TryCast(MyBase.GetBrick(info), TextBrick)
             If baseBrick Is Nothing Then Return MyBase.GetBrick(info)
-            Dim panelBrick As IPanelBrick = info.PS.CreatePanelBrick()
-            Dim imageBrick As IImageBrick = info.PS.CreateImageBrick()
+            Dim panelBrick As PanelBrick = info.PS.CreateBrick("PanelBrick")
+            Dim imageBrick As ImageBrick = info.PS.CreateBrick("ImageBrick")
             panelBrick.Bricks.Add(baseBrick)
             panelBrick.Bricks.Add(imageBrick)
             imageBrick.Padding = New PaddingInfo(2, 2, 5, 5)
